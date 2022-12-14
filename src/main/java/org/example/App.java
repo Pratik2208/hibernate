@@ -13,7 +13,7 @@ public class App
     {
         System.out.println( "Project Started ...." );
         SessionFactory factory = new Configuration().configure("file:src/main/java/hibernate.cfg.xml").buildSessionFactory();
-        System.out.println(factory);
+        //System.out.println(factory);
 
         // Creating Student Object
         Student student = new Student();
@@ -40,6 +40,8 @@ public class App
         session.save(address);
         transaction.commit();
         session.close();
+
+
 
     }
 }

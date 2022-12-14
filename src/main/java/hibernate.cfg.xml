@@ -10,11 +10,11 @@
         <property name="connection.username">root</property>
         <property name="connection.password">220802</property>
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <mapping class="org.example.Student"/>
         <mapping class="org.example.Address"/>
-
-
+        <mapping class="org.mapping.Question"/>
+        <mapping class="org.mapping.Answer"/>
     </session-factory>
 </hibernate-configuration>
